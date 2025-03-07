@@ -266,8 +266,8 @@ install_nodes() {
 
     ensure_dir "$SHARED_MODEL_DIR"
     if [ ! -f "$SHARED_MODEL_DIR/Llama-3.2-3B-Instruct-Q5_K_M.gguf" ]; then
-        info "下载共享模型 Llama-3.2-3B-Instruct-Q5_K_M.gguf ..."
-        curl -L "https://huggingface.co/second-state/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q5_K_M.gguf" -o "$SHARED_MODEL_DIR/Llama-3.2-3B-Instruct-Q5_K_M.gguf" || error "模型下载失败！"
+        info "下载共享模型 Llama-3.2-1B ..."
+        curl -L "https://huggingface.co/gaianet/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q5_K_M.gguf" -o "$SHARED_MODEL_DIR/Llama-3.2-3B-Instruct-Q5_K_M.gguf" || error "模型下载失败！"
     fi
     if [ ! -f "$SHARED_MODEL_DIR/nomic-embed-text-v1.5.f16.gguf" ]; then
         info "下载共享模型 nomic-embed-text-v1.5.f16.gguf ..."
